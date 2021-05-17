@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using EatingDaily.Storage.Entity;
-//using EatingDaily.Storage.StorgeEntity;
+using EatingDaily.Storage.StorageEntity;
 
 namespace EatingDaily.Storage
 {
