@@ -16,11 +16,11 @@ namespace EatingDaily.Managers.EntryM
             _context = context;
         }
 
-        public List<Entry> GetEntries(int IdDiary)
+        public List<Entry> GetEntries(int IdDiet)
         {
             List<Entry> entry = new List<Entry>();
 
-            foreach (var item in _context.Entries.ToList().Where(x => x.DietID == IdDiary))
+            foreach (var item in _context.Entries.ToList().Where(x => x.DietID == IdDiet))
             {
                 switch (item.Type)
                 {
@@ -48,10 +48,10 @@ namespace EatingDaily.Managers.EntryM
             return entry;
         }
 
-        public void DelEntries(int IdDiary)
+        public void DelEntries(int IdDiet)
         {
 
-            foreach (var item in _context.Entries.ToList().Where(x => x.DietID == IdDiary))
+            foreach (var item in _context.Entries.ToList().Where(x => x.DietID == IdDiet))
             {
                 switch (item.Type)
                 {
@@ -106,7 +106,7 @@ namespace EatingDaily.Managers.EntryM
             _context.SaveChanges();
         }
 
-        public void AddEntry(TextEntry entry, int IdDiary)
+        public void AddEntry(TextEntry entry, int IdDiet)
         {
             entry.Type = "Edit_Text_Entry";
             _context.TextEntries.Add(entry);
@@ -114,9 +114,9 @@ namespace EatingDaily.Managers.EntryM
             _context.Entries.Add(new EntriesBelonging
             {
                 Type = 1,
-                EntryID =
+                EntryID = ///???
             _context.TextEntries.ToList().Last().ID,
-                DietID = IdDiary
+                DietID = IdDiet
             });
             _context.SaveChanges();
         }
