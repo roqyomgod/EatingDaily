@@ -10,7 +10,7 @@ namespace EatingDaily.Storage.Entity
     {
         [Key]
         public int BelongingID { get; set; }
-        public int DiaryID { get; set; }
+        public int DietID { get; set; }
         public int Type { get; set; }
         public int EntryID { get; set; }
     }
