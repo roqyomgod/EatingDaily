@@ -9,7 +9,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Managers\DietM\" />
     <Folder Include="Managers\EntryM\" />
   </ItemGroup>
 
