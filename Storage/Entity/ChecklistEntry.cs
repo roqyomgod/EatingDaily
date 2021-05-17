@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace EatingDaily.Storage.Entity
 {
-    public class ChecklistEntry
+    public class ChecklistEntry : Entry
     {
         public string Contents { get; set; }
         public string TrueFalses { get; set; }
