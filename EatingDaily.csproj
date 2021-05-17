@@ -8,4 +8,9 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.6" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Managers\DietM\" />
+    <Folder Include="Managers\EntryM\" />
+  </ItemGroup>
+
 </Project>
