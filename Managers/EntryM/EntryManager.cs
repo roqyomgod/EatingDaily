@@ -114,14 +114,14 @@ namespace EatingDaily.Managers.EntryM
             _context.Entries.Add(new EntriesBelonging
             {
                 Type = 1,
-                EntryID = ///???
+                EntryID = 
             _context.TextEntries.ToList().Last().ID,
                 DietID = IdDiet
             });
             _context.SaveChanges();
         }
 
-        //public void AddEntry(MitingEntry entry, int IdDiary)
+        //public void AddEntry(MitingEntry entry, int IdDiet)
         //{
         // entry.Type = "Edit_Miting_Entry";
         // _context.MitingEntries.Add(entry);
@@ -131,12 +131,12 @@ namespace EatingDaily.Managers.EntryM
         // Type = 2,
         // EntryID =
         // _context.MitingEntries.ToList().Last().ID,
-        // DiaryID = IdDiary
+        // DiaryID = IdDiet
         // });
         // _context.SaveChanges();
         //}
 
-        public void AddEntry(ReminderEntry entry, int IdDiary)
+        public void AddEntry(ReminderEntry entry, int IdDiet)
         {
             entry.Type = "Edit_Reminder_Entry";
             _context.ReminderEntries.Add(entry);
@@ -146,12 +146,12 @@ namespace EatingDaily.Managers.EntryM
                 Type = 3,
                 EntryID =
             _context.ReminderEntries.ToList().Last().ID,
-                DietID = IdDiary
+                DietID = IdDiet
             });
             _context.SaveChanges();
         }
 
-        public void AddEntry(TimerEntry entry, int IdDiary)
+        public void AddEntry(TimerEntry entry, int IdDiet)
         {
             entry.Type = "Edit_Timer_Entry";
             _context.TimerEntries.Add(entry);
@@ -162,12 +162,12 @@ namespace EatingDaily.Managers.EntryM
                 Type = 4,
                 EntryID =
             _context.TimerEntries.ToList().Last().ID,
-                DietID = IdDiary
+                DietID = IdDiet
             });
             _context.SaveChanges();
         }
 
-        public void AddEntry(ChecklistEntry entry, int IdDiary)
+        public void AddEntry(ChecklistEntry entry, int IdDiet)
         {
             entry.Type = "Edit_Checklist_Entry";
             _context.ChecklistEntries.Add(entry);
@@ -177,11 +177,11 @@ namespace EatingDaily.Managers.EntryM
                 Type = 6,
                 EntryID =
             _context.ChecklistEntries.ToList().Last().ID,
-                DietID = IdDiary
+                DietID = IdDiet
             });
             _context.SaveChanges();
         }
-        public void AddEntry(ImageEntry entry, int IdDiary)
+        public void AddEntry(ImageEntry entry, int IdDiet)
         {
             entry.Type = "Edit_Image_Entry";
             _context.Images.Add(entry);
@@ -191,7 +191,7 @@ namespace EatingDaily.Managers.EntryM
                 Type = 5,
                 EntryID =
             _context.Images.ToList().Last().ID,
-                DietID = IdDiary
+                DietID = IdDiet
             });
             _context.SaveChanges();
         }
