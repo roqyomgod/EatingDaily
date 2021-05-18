@@ -37,7 +37,7 @@ namespace ToDoBook.Managers.ImageM
 				person.Image = imageData;
 			}
 
-			int id = profile.GetIn(UserID).ImageId;
+			int id = profile.GetIn(UserID).ImageID;
 			if (id != 0)
 				_context.Images.FirstOrDefault(Im => Im.ID == id).Image = person.Image;
 			else
