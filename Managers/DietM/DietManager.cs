@@ -19,26 +19,26 @@ namespace EatingDaily.Managers.DietM
 			_context = context;
 		}
 
-		public void AddDiet(Diet NewDiary, int Userid)
+		public void AddDiet(Diet NewDiet, int Userid)
 		{
-			_context.Diets.Add(NewDiary);
+			_context.Diets.Add(NewDiet);
 			_context.SaveChanges();
 			_context.Belongings.Add(new Belonging { UserID = Userid, DietID = _context.Diets.ToList().Last().ID });
 			_context.SaveChanges();
 		}
 
-		public List<Diet> GetDiaries(int id)
+		public List<Diet> GetDiets(int id)
 		{
-			List<Diet> diaries = new List<Diet>();
+			List<Diet> diets = new List<Diet>();
 
 			foreach (var item in _context.Belongings.ToList().Where(x => x.UserID == id))
 			{
-				diaries.Add(_context.Diets.Find(item.DietID));
+				diets.Add(_context.Diets.Find(item.DietID));
 			}
-			return diaries;
+			return diets;
 		}
 
-		public void DeleteDiaries(int ID)
+		public void DeleteDiets(int ID)
 		{
 			EntryManager entryManager = new EntryManager(_context);
 
