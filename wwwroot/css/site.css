@@ -41,6 +41,14 @@ html {
 .border-bottom {
   border-bottom: 1px solid #e5e5e5;
 }
+.border-bottom-right {
+    max-width: 8em; /* блок занимает ширину родителя, max-width её ограничивает */
+    min-height: 2em;
+    margin-left: 0;
+    margin-right: auto;
+    border: 1px solid orange;
+    background: #fff5d7;
+}
 
 .box-shadow {
   box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
