@@ -1,0 +1,75 @@
+/*Авторизация*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #ecf0f1;
+}
+
+.Login {
+    width: 400px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #0a3d62;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.Login input[type="text"], .Login input[type="password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #b8e994;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.Login h1 {
+    color:white;
+    text-align:center;
+    font-weight:300;
+}
+
+.Login input[type="text"]:focus, .Login input[type="password"]:focus {
+     width: 280px;
+     border-color: #f6b93b;
+}
+
+.Login input[type="submit"] { 
+    border: 0;
+    background: none;  
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #b8e994;
+    padding: 14px 10px;
+    width: 120px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.Registr{
+    color: gray;
+    font-size: 14px;
+    text-decoration: none;
+}
+.Registr:hover{
+    color:white;
+}
+
+
+.Login input[type="submit"]:hover {
+    background: #b8e994;
+    color: black;
+}
+/*Авторизация\*/
