@@ -170,6 +170,24 @@
         color: #000;
         background-color: #b8e994;
     }
+.logout input[type="button"] {
+    background: none;
+    font-size: 20px;
+    font-family: 'Montserrat';
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #efefef;
+    background-color: #84c4ff;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+    }
+
 
 
 

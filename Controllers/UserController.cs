@@ -33,7 +33,6 @@ namespace EatingDaily.Controllers
 			ProfileManager profileManager = new ProfileManager(_context);
 			Profile profile = profileManager.GetIn(int.Parse(User.Identity.Name));
 			ViewBag.Profile = profile;
-			profile.Name = User.Identity.Name;
 			if (profile.ImageID != 0)
 				ViewBag.Avatar = _context.Images.FirstOrDefault(imeg => imeg.ID == profile.ImageID).Image;
 			return View();
@@ -250,21 +249,7 @@ namespace EatingDaily.Controllers
 			return RedirectToAction("Show_Entry", new { ID = DietID });
 		}
 
-		/*[HttpGet]
-		public ActionResult AddMitingEntry(int ID)
-		{
-			ViewBag.ID = ID;
-			return View();
-		}*/
-
-		/*[HttpPost]
-		public ActionResult AddMitingEntry(MitingEntry data, int DiaryId)
-		{
-			EntryManager entry = new EntryManager(_context);
-			data.ID = 0;
-			entry.AddEntry(data, DiaryId);
-			return RedirectToAction("Show_Entry", new { ID = DiaryId });
-		}*/
+		[HttpGet]
 
 		public ActionResult AddImageEntry(int ID)
 		{

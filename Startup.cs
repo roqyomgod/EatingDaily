@@ -33,7 +33,7 @@ namespace EatingDaily
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                 .AddCookie(options => //CookieAuthenticationOptions
                 {
-                    options.LoginPath = new Microsoft.AspNetCore.Http.PathString("/Home/Main_2");
+                    options.LoginPath = new Microsoft.AspNetCore.Http.PathString("/Home/Index");
                 });
             services.AddControllersWithViews();
         }

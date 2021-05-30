@@ -19,15 +19,15 @@ namespace EatingDaily.Controllers
 			_logger = logger;
 		}
 		
-		[Authorize]
+		//[Authorize]
 		public IActionResult Index()
 		{
 			return View();
 		}
-		public IActionResult Main_2()
+		/*public IActionResult Main_2()
 		{
 			return View();
-		}
+		}*/
 
 		public IActionResult Privacy()
 		{
