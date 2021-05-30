@@ -31,10 +31,11 @@ namespace EatingDaily.Controllers
 		public ActionResult Index()
 		{
 			ProfileManager profileManager = new ProfileManager(_context);
-			Profile prifile = profileManager.GetIn(int.Parse(User.Identity.Name));
-			ViewBag.Profile = prifile;
-			if (prifile.ImageID != 0)
-				ViewBag.Avatar = _context.Images.FirstOrDefault(imeg => imeg.ID == prifile.ImageID).Image;
+			Profile profile = profileManager.GetIn(int.Parse(User.Identity.Name));
+			ViewBag.Profile = profile;
+			profile.Name = User.Identity.Name;
+			if (profile.ImageID != 0)
+				ViewBag.Avatar = _context.Images.FirstOrDefault(imeg => imeg.ID == profile.ImageID).Image;
 			return View();
 		}
 		//
@@ -84,16 +85,16 @@ namespace EatingDaily.Controllers
 		[HttpPost]
 		public ActionResult AddDiet(Diet data)
 		{
-			DietManager diary = new DietManager(_context);
-			diary.AddDiet(data, int.Parse(User.Identity.Name));
+			DietManager diet = new DietManager(_context);
+			diet.AddDiet(data, int.Parse(User.Identity.Name));
 
 			return RedirectToAction("RequestDiet");
 		}
 
 		public ActionResult RequestDiet(int? ID)
 		{
-			DietManager diary = new DietManager(_context);
-			return View(diary.GetDiets(ID ?? int.Parse(User.Identity.Name)));
+			DietManager diet = new DietManager(_context);
+			return View(diet.GetDiets(ID ?? int.Parse(User.Identity.Name)));
 		}
 
 		public IActionResult Show_Entry(int ID)
@@ -120,25 +121,6 @@ namespace EatingDaily.Controllers
 			_context.SaveChanges();
 			return RedirectToAction("Show_Entry", new { ID = DietID });
 		}
-
-		/*[HttpGet]
-		public IActionResult Edit_Miting_Entry(int id, int id2)
-		{
-			ViewBag.ID = id2;
-			ViewBag.Entries = _context.MitingEntries.Find(id);
-			return View();
-		}*/
-
-		/*[HttpPost]
-		public ActionResult Edit_Miting_Entry(MitingEntry data, int DiaryID)
-		{
-			_context.MitingEntries.Find(data.ID).Name = data.Name;
-			_context.MitingEntries.Find(data.ID).Description = data.Description;
-			_context.MitingEntries.Find(data.ID).Time = data.Time;
-			_context.MitingEntries.Find(data.ID).Place = data.Place;
-			_context.SaveChanges();
-			return RedirectToAction("Show_Entry", new { ID = DiaryID });
-		}*/
 
 		[HttpGet]
 		public IActionResult Edit_Image_Entry(int id, int id2)

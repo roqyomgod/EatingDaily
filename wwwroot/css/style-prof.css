@@ -1,0 +1,218 @@
+﻿/*Шапка*/
+.header {
+    position: absolute;
+    top: 0;
+    left: 150px;
+    right: 150px;
+    width: 1620px;
+    height: 60px;
+    background-color: #023140;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Logo {
+    text-decoration: none;
+    user-select: none;
+}
+
+.header-logo {
+    margin: 0 30px;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff
+}
+
+    .header-logo:hover {
+        color: #fae26b;
+    }
+
+.container-logo {
+    position: absolute;
+    top: 5px;
+    left: 175px;
+    right: 165px;
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    border-color: #828185;
+    background-color: #828185;
+}
+/*Шапка*/
+
+/*Фон*/
+.mainstr {
+    position: absolute;
+    height: 100vh;
+    width: 1620px;
+    height: 1500px;
+    background-color: #e9f0c0;
+    left: 150px;
+    right: 150px;
+    top: 60px;
+}
+
+.user {
+    position: absolute;
+    display: flex;
+    width: 1200px;
+    height: 400px;
+    top: 100px;
+    left: 210px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    background-color: #C4C4C4;
+    border-radius: 50%;
+}
+
+.user-content {
+    margin-right: 300px;
+    font-size: 24px;
+    font-family: 'Montserrat';
+    color: #000;
+}
+
+.user-name input[type="text"] {
+    font-size: 20px;
+    font-family: 'Montserrat';
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #023140;
+    background-color: #023140;
+    padding: 14px 10px;
+    width: 400px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.user-surname input[type="text"] {
+    background: none;
+    font-size: 20px;
+    font-family: 'Montserrat';
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #023140;
+    background-color: #023140;
+    padding: 14px 10px;
+    width: 400px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.user-telephone input[type="text"] {
+    background: none;
+    font-size: 20px;
+    font-family: 'Montserrat';
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #023140;
+    background-color: #023140;
+    padding: 14px 10px;
+    width: 400px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.user-age input[type="text"] {
+    background: none;
+    font-size: 20px;
+    font-family: 'Montserrat';
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #023140;
+    background-color: #023140;
+    padding: 14px 10px;
+    width: 400px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.user-sub input[type="submit"] {
+    background: none;
+    font-size: 20px;
+    font-family: 'Montserrat';
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #023140;
+    background-color: #023140;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+    .user-sub input[type="submit"]:hover {
+        color: #000;
+        background-color: #b8e994;
+    }
+
+
+
+/*Фон*/
+
+/*Навигация*/
+.nav {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-right: 50px;
+}
+
+
+
+.nav_link {
+    color: #fff;
+    text-decoration: none;
+    transition: color .2s linear;
+    vertical-align: top;
+    display: inline-block;
+    margin: 0px 15px;
+}
+
+    .nav_link:hover {
+        color: #fae26b;
+    }
+/*Навигация*/
+/**/
+.footer {
+    position: absolute;
+    width: 1620px;
+    height: 60px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #023140;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #fff;
+}
+
+.copy {
+    margin-left: 50px;
+    margin-top: 15px;
+}
+/**/
