@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background: #96cfff;
+    background: #a8f0fc;
     text-decoration-color: white;
 }
 
@@ -15,25 +15,25 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background: #96cfff;
+    background: #a8f0fc;
     text-align: center;
     border-radius: 20px;
 }
 
     .Login input[type="text"], .Login input[type="password"] {
         border: 0;
-        background: none;
+        background: #a8f0fc;
         display: block;
         margin: 20px auto;
         text-align: center;
-        border: 2px solid #efefef;
+        border: 2px solid white;
         padding: 14px 10px;
         width: 200px;
         outline: none;
-        color: white;
+        color: black;
         border-radius: 24px;
         transition: 0.25s;
-        text-decoration-color: white;
+        text-decoration-color: black;
     }
 
 .Login h1 {
@@ -44,39 +44,39 @@ body {
 
     .Login input[type="text"]:focus, .Login input[type="password"]:focus {
         width: 280px;
-        border-color: white;
+        border-color: #FFE8C5;
     }
 
     .Login input[type="submit"] {
         border: 0;
-        background: none;
+        background: #a8f0fc;
         display: block;
         margin: 20px auto;
         text-align: center;
-        border: 2px solid #96cfff;
+        border: 2px solid white;
         padding: 14px 10px;
         width: 120px;
         outline: none;
-        color: white;
+        color: black;
         border-radius: 24px;
         transition: 0.25s;
-        text-decoration-color: white;
+        text-decoration-color: black;
     }
 .Registr {
-    color: #43a5ff;
+    color: black;
     font-size: 14px;
     text-decoration: none;
-    text-decoration-color: white;
+    text-decoration-color: black;
 }
     .Registr:hover {
-        color: white;
-        text-decoration-color: white;
+        color: black;
+        text-decoration-color: black;
     }
 
 
 .Login input[type="submit"]:hover {
-    background: #96cfff;
-    color: black;
+    background: #a8f0fc;
+    color: white;
     text-decoration-color: white;
 }
 /*Авторизация\*/
