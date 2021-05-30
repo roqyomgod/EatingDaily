@@ -79,7 +79,6 @@ namespace EatingDaily.Controllers
 		public ActionResult AddDiet()
 		{
 			return View();
-			return View();
 		}
 
 		[HttpPost]
