@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background: #ecf0f1;
+    background: #a8f0fc;
 }
 
 .Register {
@@ -13,25 +13,25 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background: #0a3d62;
+    background: #a8f0fc;
     text-align: center;
     border-radius: 20px;
 }
 
-.Register input[type="text"], .Register input[type="password"], .Register input[type="password"] {
-    border: 0;
-    background: none;
-    display: block;
-    margin: 20px auto;
-    text-align: center;
-    border: 2px solid #b8e994;
-    padding: 14px 10px;
-    width: 250px;
-    outline: none;
-    color: white;
-    border-radius: 24px;
-    transition: 0.25s;
-}
+    .Register input[type="text"], .Register input[type="password"], .Register input[type="password"] {
+        border: 0;
+        background: #a8f0fc;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        border: 2px solid white;
+        padding: 14px 10px;
+        width: 250px;
+        outline: none;
+        color: black;
+        border-radius: 24px;
+        transition: 0.25s;
+    }
 
 .Register h1 {
     color: white;
@@ -39,30 +39,30 @@ body {
     font-weight: 300;
 }
 
-.Register input[type="text"]:focus, .Register input[type="password"]:focus, .Register input[type="password"]:focus {
-    width: 290px;
-    border-color: #f6b93b;
-}
+    .Register input[type="text"]:focus, .Register input[type="password"]:focus, .Register input[type="password"]:focus {
+        width: 290px;
+        border-color: #FFE8C5;
+    }
 
-.Register input[type="submit"] {
-    border: 0;
-    background: none;
-    display: block;
-    margin: 20px auto;
-    text-align: center;
-    border: 2px solid #b8e994;
-    padding: 14px 10px;
-    width: 200px;
-    outline: none;
-    color: white;
-    border-radius: 24px;
-    transition: 0.25s;
-}
+    .Register input[type="submit"] {
+        border: 0;
+        background: #a8f0fc;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        border: 2px solid white;
+        padding: 14px 10px;
+        width: 200px;
+        outline: none;
+        color: black;
+        border-radius: 24px;
+        transition: 0.25s;
+    }
 
 
 
-.Register input[type="submit"]:hover {
-    background: #b8e994;
-    color: black;
-}
+        .Register input[type="submit"]:hover {
+            background: #a8f0fc;
+            color: white;
+        }
 /*Авторизация\*/
