@@ -4,11 +4,13 @@ body {
     padding: 0;
     font-family: sans-serif;
     background: #96cfff;
+    text-decoration-color: white;
 }
 
 .Login {
     width: 400px;
     padding: 40px;
+    text-decoration-color: white;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -18,20 +20,21 @@ body {
     border-radius: 20px;
 }
 
-.Login input[type="text"], .Login input[type="password"] {
-    border: 0;
-    background: none;
-    display: block;
-    margin: 20px auto;
-    text-align: center;
-    border: 2px solid #efefef;
-    padding: 14px 10px;
-    width: 200px;
-    outline: none;
-    color: white;
-    border-radius: 24px;
-    transition: 0.25s;
-}
+    .Login input[type="text"], .Login input[type="password"] {
+        border: 0;
+        background: none;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        border: 2px solid #efefef;
+        padding: 14px 10px;
+        width: 200px;
+        outline: none;
+        color: white;
+        border-radius: 24px;
+        transition: 0.25s;
+        text-decoration-color: white;
+    }
 
 .Login h1 {
     color:white;
@@ -41,7 +44,7 @@ body {
 
     .Login input[type="text"]:focus, .Login input[type="password"]:focus {
         width: 280px;
-        border-color: #96cfff;
+        border-color: white;
     }
 
     .Login input[type="submit"] {
@@ -57,19 +60,23 @@ body {
         color: white;
         border-radius: 24px;
         transition: 0.25s;
+        text-decoration-color: white;
     }
-.Registr{
+.Registr {
     color: #43a5ff;
     font-size: 14px;
     text-decoration: none;
+    text-decoration-color: white;
 }
-.Registr:hover{
-    color:white;
-}
+    .Registr:hover {
+        color: white;
+        text-decoration-color: white;
+    }
 
 
 .Login input[type="submit"]:hover {
     background: #96cfff;
     color: black;
+    text-decoration-color: white;
 }
 /*Авторизация\*/

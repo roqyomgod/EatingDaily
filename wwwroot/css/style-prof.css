@@ -6,7 +6,7 @@
     right: 150px;
     width: 1620px;
     height: 60px;
-    background-color: #023140;
+    background-color: #82c0ff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,7 +37,7 @@
     height: 50px;
     border-radius: 15px;
     border-color: #828185;
-    background-color: #828185;
+    background-color: #82c0ff;
 }
 /*Шапка*/
 
@@ -47,7 +47,7 @@
     height: 100vh;
     width: 1620px;
     height: 1500px;
-    background-color: #e9f0c0;
+    background-color: #82c0ff;
     left: 150px;
     right: 150px;
     top: 60px;
@@ -89,7 +89,7 @@
     margin: 20px auto;
     text-align: center;
     border: 2px solid #023140;
-    background-color: #023140;
+    background-color: #82c0ff;
     padding: 14px 10px;
     width: 400px;
     outline: none;
@@ -106,7 +106,7 @@
     margin: 20px auto;
     text-align: center;
     border: 2px solid #023140;
-    background-color: #023140;
+    background-color: #82c0ff;
     padding: 14px 10px;
     width: 400px;
     outline: none;
@@ -123,7 +123,7 @@
     margin: 20px auto;
     text-align: center;
     border: 2px solid #023140;
-    background-color: #023140;
+    background-color: #82c0ff;
     padding: 14px 10px;
     width: 400px;
     outline: none;
@@ -140,7 +140,7 @@
     margin: 20px auto;
     text-align: center;
     border: 2px solid #023140;
-    background-color: #023140;
+    background-color: #82c0ff;
     padding: 14px 10px;
     width: 400px;
     outline: none;
@@ -157,7 +157,7 @@
     margin: 20px auto;
     text-align: center;
     border: 2px solid #023140;
-    background-color: #023140;
+    background-color: #82c0ff;
     padding: 14px 10px;
     width: 200px;
     outline: none;
@@ -178,7 +178,7 @@
     margin: 20px auto;
     text-align: center;
     border: 2px solid #efefef;
-    background-color: #84c4ff;
+    background-color: #82c0ff;
     padding: 14px 10px;
     width: 200px;
     outline: none;
@@ -204,7 +204,7 @@
 
 
 .nav_link {
-    color: #fff;
+    color: #82c0ff;
     text-decoration: none;
     transition: color .2s linear;
     vertical-align: top;
@@ -223,7 +223,7 @@
     height: 60px;
     bottom: 0px;
     left: 0px;
-    background-color: #023140;
+    background-color: #82c0ff;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     color: #fff;
