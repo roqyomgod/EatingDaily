@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background: #ecf0f1;
+    background: #96cfff;
 }
 
 .Login {
@@ -13,7 +13,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background: #0a3d62;
+    background: #96cfff;
     text-align: center;
     border-radius: 20px;
 }
@@ -24,7 +24,7 @@ body {
     display: block;
     margin: 20px auto;
     text-align: center;
-    border: 2px solid #b8e994;
+    border: 2px solid #efefef;
     padding: 14px 10px;
     width: 200px;
     outline: none;
@@ -39,27 +39,27 @@ body {
     font-weight:300;
 }
 
-.Login input[type="text"]:focus, .Login input[type="password"]:focus {
-     width: 280px;
-     border-color: #f6b93b;
-}
+    .Login input[type="text"]:focus, .Login input[type="password"]:focus {
+        width: 280px;
+        border-color: #96cfff;
+    }
 
-.Login input[type="submit"] { 
-    border: 0;
-    background: none;  
-    display: block;
-    margin: 20px auto;
-    text-align: center;
-    border: 2px solid #b8e994;
-    padding: 14px 10px;
-    width: 120px;
-    outline: none;
-    color: white;
-    border-radius: 24px;
-    transition: 0.25s;
-}
+    .Login input[type="submit"] {
+        border: 0;
+        background: none;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        border: 2px solid #96cfff;
+        padding: 14px 10px;
+        width: 120px;
+        outline: none;
+        color: white;
+        border-radius: 24px;
+        transition: 0.25s;
+    }
 .Registr{
-    color: gray;
+    color: #43a5ff;
     font-size: 14px;
     text-decoration: none;
 }
@@ -69,7 +69,7 @@ body {
 
 
 .Login input[type="submit"]:hover {
-    background: #b8e994;
+    background: #96cfff;
     color: black;
 }
 /*Авторизация\*/
