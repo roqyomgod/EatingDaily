@@ -6,23 +6,10 @@
 <head>
 	<meta charset="utf-8">
 	<title>ToDoBook</title>
-	<link rel="stylesheet" href="css/style-prof.css">
+	<link rel="stylesheet" href="~/css/style-prof.css">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-	<header class="header">
-		<div class="header-logo">ToDoBook</div>
-		<div class="container-logo">
-			<img src="~/image/book.svg" alt="">
-		</div>
-		<nav class="nav">
-			<a class="nav_link" href="/Home">Главная</a>
-			<a class="nav_link" href="~/User">Профиль</a>
-			<a class="nav_link" href="~/User/RequestDiary">Рацион</a>
-			<a class="nav_link" href="/Home">О нас</a>
-			<a class="nav_link" href="User/News">Новости</a>
-		</nav>
-	</header>
 	<div class="mainstr">
 		<div class="user">
 			<div class="avatar">
@@ -44,11 +31,10 @@
 					<div class="user-age"><input type="text" name="Age" value="@ViewBag.Profile.Age" placeholder="Возраст"></div>
 					<input name="Avatar" type="file" class="form-control" />
 					<div class="user-sub"><input type="submit" name="" placeholder="Отправить"></div>
-					<div class="logout"><input type="button" href="~/account/logout"</div>
+					<a class="logout" href="~/account/logout">XYU</a>
 				</form>
 			</div>
 		</div>
-		<div class="footer"><div class="copy">Все права защищены &copy; 2021 ToDoBook</div></div>
 	</div>
 
 </body>
