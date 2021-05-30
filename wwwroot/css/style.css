@@ -1,0 +1,219 @@
+/*Шапка*/
+.header {
+    position: absolute;
+    top: 0;
+    left: 150px;
+    right: 150px;
+    width: 1620px;
+    height: 60px;
+    background-color: #023140;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Logo {
+    text-decoration: none;
+    user-select: none;
+}
+
+.header-logo {
+    margin: 0 30px;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff
+}
+
+    .header-logo:hover {
+        color: #fae26b;
+    }
+
+.container-logo {
+    position: absolute;
+    top: 5px;
+    left: 175px;
+    right: 165px;
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    border-color: #828185;
+    background-color: #828185;
+}
+/*Шапка*/
+
+/*Фон*/
+.mainstr {
+    position: absolute;
+    height: 100vh;
+    width: 1620px;
+    height: 1500px;
+    background-color: #e9f0c0;
+    left: 150px;
+    right: 150px;
+    top: 60px;
+}
+
+.picture {
+    float: right;
+    border-radius: 2px;
+}
+
+.Offer {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    width: 420px;
+    height: 320px;
+    position: absolute;
+    top: 350px;
+    left: 100px;
+}
+
+.h2 {
+    font-size: 40px;
+    float: left;
+    font-weight: bold;
+}
+
+.text2 {
+    font-size: 40px;
+    float: left;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.Zagolovok_text {
+    font size:18px;
+    float: left;
+}
+
+.Button {
+    margin: 15px;
+    margin-left: 50px;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 16px;
+    color: #fff;
+    background-color: #034265;
+}
+
+    .Button:hover {
+        color: #fae26b;
+    }
+
+.Line {
+    position: absolute;
+    width: 1200px;
+    background-color: #000;
+    height: 1px;
+    top: 1100px;
+    left: 210px;
+}
+
+.AboutUs {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 1420px;
+    height: 200px;
+    left: 100px;
+    top: 1120px;
+    align-content: center;
+    align-items: flex-start;
+}
+
+.about {
+    font-family: 'Montserrat';
+    font-size: 40px;
+    float: left;
+    font-weight: bold;
+    margin: 0;
+    position: absolute;
+    left: 35%;
+}
+
+.text {
+    font-family: 'Montserrat';
+    margin-top: 75px;
+    text-indent: 45px;
+    font size: 18px;
+    line-height: 1.5rem;
+}
+
+
+/*Фон*/
+
+/*Навигация*/
+.nav {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-right: 200px;
+}
+
+.avtor {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+}
+
+.avtor_img {
+    background-color: #fff;
+}
+
+.avtor_img2 {
+    filter: invert(1)
+}
+
+.avtor_btn {
+    color: #fff;
+    text-decoration: none;
+    transition: color .2s linear;
+    vertical-align: top;
+    display: inline-block;
+    margin: 0px 15px;
+    transition: color .2s linear;
+}
+
+    .avtor_btn:hover {
+        color: #fae26b;
+    }
+
+.nav_link {
+    color: #fff;
+    text-decoration: none;
+    transition: color .2s linear;
+    vertical-align: top;
+    display: inline-block;
+    margin: 0px 15px;
+}
+
+    .nav_link:hover {
+        color: #fae26b;
+    }
+/*Навигация*/
+/**/
+.footer {
+    position: absolute;
+    width: 1620px;
+    height: 60px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #023140;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #fff;
+}
+
+.copy {
+    margin-left: 50px;
+    margin-top: 15px;
+}
+/**/
