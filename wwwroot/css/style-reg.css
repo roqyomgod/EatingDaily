@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background: #a8f0fc;
+    background-color: rgba(235, 245, 252, .75);
 }
 
 .Register {
@@ -13,7 +13,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background: #a8f0fc;
+    background-color: rgba(235, 245, 252, .75);
     text-align: center;
     border-radius: 20px;
 }
