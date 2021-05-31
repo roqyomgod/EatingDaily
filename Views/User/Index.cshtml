@@ -28,7 +28,14 @@
                     <div class="user-name"><input type="text" name="Name" value="@ViewBag.Profile.Name" placeholder="Имя"></div>
                     <div class="user-surname"><input type="text" name="LastName" value="@ViewBag.Profile.LastName" placeholder="Фамилия"></div>
                     <div class="user-telephone"><input type="text" name="Phone" value="@ViewBag.Profile.Phone" placeholder="Номер"></div>
-                    <div class="user-age"><input type="text" name="Age" value="@ViewBag.Profile.Age" placeholder="Возраст"></div>
+                    @if (ViewBag.Profile.Age != 0)
+                    {
+                        <div class="user-age"><input type="text" name="Age" value="@ViewBag.Profile.Age"  placeholder="Возраст"></div>
+                    }
+                    else
+                    {
+                    <div class="user-age"><input type="text" name="Age" value=""  placeholder="Возраст"></div>
+                    }
                     <div class="user-sub"><input type="submit" name="" placeholder="Отправить"></div>
                     <a class="logout" href="~/account/logout">Выход</a>
                 </form>
