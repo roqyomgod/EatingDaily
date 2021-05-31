@@ -5,12 +5,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Views\Home\images\**" />
+    <Content Remove="Views\Home\images\**" />
+    <EmbeddedResource Remove="Views\Home\images\**" />
+    <None Remove="Views\Home\images\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.6" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.6">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <Content Include="Views/Home/images/fon.jpg" />
   </ItemGroup>
 
   <ItemGroup>
