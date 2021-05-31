@@ -33,6 +33,12 @@ namespace EatingDaily.Storage.StorageEntity
                         Description = "Не вкусная, но полезная еда.",
                         Url = "http://vkusvill.ru"
                     });
+               context.SourceData.Add(
+               new Source
+                {
+                    Description = "Вкусная, но не полезная еда тут!",
+                    Url = "https://mcdonalds.ru/"
+               });
                 context.SaveChanges();
             }
         }
