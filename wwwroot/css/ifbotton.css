@@ -1,0 +1,21 @@
+﻿.blank2 {
+    color: black;
+    font-size: 40px;
+}
+
+    .blank2:hover {
+        transition: 0.25s;
+        color: black;
+        text-decoration: underline;
+    }
+
+.blank3 {
+    color: black;
+    font-size: 40px;
+}
+
+    .blank3:hover {
+        transition: 0.25s;
+        color: black;
+        text-decoration: underline;
+    }
