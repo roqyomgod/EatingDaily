@@ -15,7 +15,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background: #ebf5fc;
+    background-color: rgba(235, 245, 252, .75);
     text-align: center;
     border-radius: 20px;
 }
@@ -36,11 +36,11 @@ body {
         text-decoration-color: black;
     }
 
-.Login h1 {
-    color:white;
-    text-align:center;
-    font-weight:300;
-}
+    .Login h1 {
+        color: #ebf5fc;
+        text-align: center;
+        font-weight: 300;
+    }
 
     .Login input[type="text"]:focus, .Login input[type="password"]:focus {
         width: 280px;

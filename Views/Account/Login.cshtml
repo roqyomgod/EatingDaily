@@ -11,8 +11,8 @@
     <title>Авторизация</title>
     <link rel="stylesheet" href="~/css/style-sign.css">
     <style>
-        div{
-            background-image: url(images/foto.jpg)
+        body {
+            background-image: url(../images/foto.jpg); /* Путь к фоновому изображению */
         }
     </style>
 </head>
@@ -20,7 +20,8 @@
     <form asp-action="Login" asp-controller="Account" asp-anti-forgery="true" class="Login">
         <div class="validation" asp-validation-summary="ModelOnly"></div>
         <div>
-            <h1 style="font-family: 'Caveat', cursive; font-size: 60px;">Авторизация</h1>
+            
+            <h1 style="font-family: 'Caveat', cursive;  font-size: 60px; color: black;">Авторизация</h1>
             <div class="form-group">
                 <input type="text" asp-for="Email" placeholder="Логин" />
                 <span asp-validation-for="Email" />
