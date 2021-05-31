@@ -1,32 +1,4 @@
-﻿/*Шапка*/
-/*.header {
-    position: absolute;
-    top: 0;
-    left: 150px;
-    right: 150px;
-    width: 1620px;
-    height: 60px;
-    background-color: #82c0ff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.Logo {
-    text-decoration: none;
-    user-select: none;
-}
-
-.header-logo {
-    margin: 0 30px;
-    font-size: 24px;
-    font-family: 'Montserrat', sans-serif;
-    color: #fff
-}
-
-    .header-logo:hover {
-        color: #fae26b;
-    }*/
+﻿
 
 .container-logo {
     position: absolute;
@@ -43,25 +15,23 @@
 
 /*Фон*/
 .mainstr {
-    position: absolute;
-    height: 100vh;
-    width: 1620px;
-    height: 1500px;
-    background-color: #ebf5fc;
-    left: 150px;
-    right: 150px;
-    top: 60px;
+    background-color: rgba(235, 245, 252, .75);
+    border-radius: 20px;
+    border: 4px black;
+    text-align: center;
+    text-decoration: none;
+    color: black;
 }
 
 .user {
     position: relative center;
     display: flex;
-    width: 1200px;
+    /*width: 1200px;
     height: 400px;
     top: 100px;
-    left: 210px;
+    left: 210px;*/
     justify-content: space-around;
-    align-items: bottom;
+    align-items: center;
 }
 
 .avatar {
@@ -75,7 +45,7 @@
 }
 
 .user-content {
-    margin-right: 300px;
+    margin-right: 100px;
     font-size: 24px;
     font-family: 'Montserrat';
     color: #000;
@@ -194,6 +164,7 @@
 /*Фон*/
 
 /*Навигация*/
+/*
 .nav {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
@@ -216,7 +187,7 @@
         color: #fae26b;
     }
 /*Навигация*/
-/**/
+/*
 
 .copy {
     margin-left: 50px;
@@ -253,4 +224,12 @@
         color: black;
         text-decoration: none;
     }
-/**/
+.polyproz {
+    background-color: rgba(255,255,255, .75);
+    border-radius: 20px;
+    border: 4px black;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+}
+*/

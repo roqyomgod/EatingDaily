@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <title>EatingDaily</title>
     <link rel="stylesheet" href="~/css/style-prof.css">
-    <link rel="stylesheet" href="~/css/style-sign.css">
+    <link rel="stylesheet" href="~/css/style-sourse.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -20,9 +20,10 @@
     </style>
 </head>
 <body>
-    <div class="validation">
-        <div class="user">
-            <div class="user-content">
+    <div class="validation" style="text-align:center;">
+        <div class="user" style="text-align:center;">
+            <div class="user-content polyproz">
+                <h1 style="font-family: 'Caveat', cursive;  font-size: 60px; color: black; text-align:center;">Ваш профиль</h1>
                 <form method="post" enctype="multipart/form-data">
                     <input type="hidden" value="@ViewBag.Profile.ID" name="ID" />
                     <div class="user-name"><input type="text" name="Name" value="@ViewBag.Profile.Name" placeholder="Имя"></div>
@@ -30,11 +31,11 @@
                     <div class="user-telephone"><input type="text" name="Phone" value="@ViewBag.Profile.Phone" placeholder="Номер"></div>
                     @if (ViewBag.Profile.Age != 0)
                     {
-                        <div class="user-age"><input type="text" name="Age" value="@ViewBag.Profile.Age"  placeholder="Возраст"></div>
+                        <div class="user-age"><input type="text" name="Age" value="@ViewBag.Profile.Age" placeholder="Возраст"></div>
                     }
                     else
                     {
-                    <div class="user-age"><input type="text" name="Age" value=""  placeholder="Возраст"></div>
+                        <div class="user-age"><input type="text" name="Age" value="" placeholder="Возраст"></div>
                     }
                     <div class="user-sub"><input type="submit" name="" placeholder="Отправить"></div>
                     <a class="logout" href="~/account/logout">Выход</a>
