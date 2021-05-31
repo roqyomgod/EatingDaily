@@ -67,8 +67,9 @@ html {
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background-image: url(images/foto.jpg); /* Путь к фоновому изображению */
 }
 .footer {
   position: absolute;

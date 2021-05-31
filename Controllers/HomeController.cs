@@ -24,10 +24,6 @@ namespace EatingDaily.Controllers
 		{
 			return View();
 		}
-		/*public IActionResult Main_2()
-		{
-			return View();
-		}*/
 
 		public IActionResult Privacy()
 		{
@@ -42,6 +38,7 @@ namespace EatingDaily.Controllers
 		{
 			return View();
 		}
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
