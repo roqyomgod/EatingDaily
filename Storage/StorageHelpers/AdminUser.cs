@@ -30,8 +30,8 @@ namespace EatingDaily.Storage.StorageEntity
                 context.SourceData.Add(
                     new Source
                     {
-                        Description = "Самые милые котки",
-                        Url = "https://www.google.com/search?q=%D0%A1%D0%B0%D0%BC%D1%8B%D0%B5+%D0%BC%D0%B8%D0%BB%D1%8B%D0%B5+%D0%BA%D0%BE%D1%82%D0%B8%D0%BA%D0%B8&sxsrf=ALeKk020JKWFXrR_HkDtLQas8OYUV5OW1Q:1618931757128&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjmgrLijo3wAhXxk4sKHbGRATkQ_AUoAXoECAEQAw&biw=1745&bih=852"
+                        Description = "Не вкусная, но полезная еда.",
+                        Url = "http://vkusvill.ru"
                     });
                 context.SaveChanges();
             }
