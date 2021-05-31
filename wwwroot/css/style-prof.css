@@ -139,6 +139,7 @@
     .user-sub input[type="submit"]:hover {
         color: #000;
         background-color: #FFE8C5;
+        text-decoration: underline;
     }
 .logout {
     background: none;
