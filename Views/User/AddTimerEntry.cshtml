@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "NewTextEntry";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ToDoBook</title>
+    <link rel="stylesheet" href="~/css/entry.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+
+    <div class="mainstr">
+        <div class="content">
+            <div class="zag">Новая запись</div>
+            <form class="entrytext" method="post">
+                <input type="hidden" value="@ViewBag.ID" name="DietId" />
+                <table class="table">
+                    <tr>
+                        <td>Имя:</td>
+                        <td><input type="text" placeholder="Название" name="Name"></td>
+
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Отправить"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="footer"><div class="copy">Все права защищены &copy; 2021 ToDoBook</div></div>
+    </div>
+</body>
+
+</html>
