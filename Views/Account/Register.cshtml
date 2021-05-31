@@ -10,6 +10,12 @@
     <meta charset="utf-8">
     <title>Авторизация</title>
     <link rel="stylesheet" href="~/css/style-reg.css">
+    <style>
+        form {
+            width: inherit;
+            background-image: url(images/foto.jpg); /* Путь к фоновому изображению */
+        }
+    </style>
 </head>
 <body>
     <form asp-action="Register" asp-controller="Account" asp-anti-forgery="true" class="Register">

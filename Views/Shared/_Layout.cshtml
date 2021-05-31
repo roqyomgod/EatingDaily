@@ -6,6 +6,11 @@
     <title>@ViewData["Title"] - Кушаем много, кушаем вкусно</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <style>
+        body {
+            background-image: url(images/foto.jpg); /* Путь к фоновому изображению */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -51,7 +56,13 @@
     </div>
 
     <footer class="border-top footer text-muted">
+
         <div class="container">
+            <style>
+                footer {
+                    background: white;
+                }
+            </style>
             &copy; 2021 - EatingDaily - <a asp-area="" asp-controller="Home" asp-action="">Copyrighted epta</a>
         </div>
     </footer>

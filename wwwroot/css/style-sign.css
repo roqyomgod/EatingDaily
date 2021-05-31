@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background: #a8f0fc;
+    background: #a8f0fc; /* Путь к фоновому изображению */
     text-decoration-color: white;
 }
 
