@@ -222,4 +222,34 @@
     margin-left: 50px;
     margin-top: 15px;
 }
+
+.Login h1 {
+    color: white;
+    text-align: center;
+    font-weight: 300;
+}
+
+
+.logout {
+    width: 400px;
+    padding: 10px;
+    text-decoration: none;
+    position: inherit;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #b8e994;
+    margin-left: 165px;
+    margin-bottom: 100px;
+    border-radius: 20px;
+    border: 2px solid black;
+    color: white;
+}
+
+
+    .logout:hover {
+        transition: 0.25s;
+        color: black;
+        text-decoration: none;
+    }
 /**/
