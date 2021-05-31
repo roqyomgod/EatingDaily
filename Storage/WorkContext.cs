@@ -24,6 +24,7 @@ namespace EatingDaily.Storage
 
         public WorkContext(DbContextOptions<WorkContext> options) : base(options)
         {
+          
             Database.EnsureCreated();
         }
     }
