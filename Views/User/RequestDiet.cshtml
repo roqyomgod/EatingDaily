@@ -1,0 +1,60 @@
+﻿@model IEnumerable<EatingDaily.Storage.Entity.Diet>
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Дневники</title>
+    <link rel="stylesheet" href="~/css/diary.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-logo">ToDoBook</div>
+        <div class="container-logo">
+            <img src="~/image/book.svg" alt="">
+        </div>
+		<nav class="nav">
+			<a class="nav_link" href="/Home">Главная</a>
+			<a class="nav_link" href="~/User">Профиль</a>
+			<a class="nav_link" href="~/User/RequestDiet">Рацион</a>
+			<a class="nav_link" href="/Home">О нас</a>
+			<a class="nav_link" href="~/User/News">Новости</a>
+		</nav>
+    </header>
+
+    <div class="mainstr">
+        <div class="content">
+            <div class="zag">Дневники пользователя</div>
+            <table class="table">
+                <tr>
+                    <td>Название</td>
+                    <td>Описание</td>
+                    <td><a class="Adddiary" href="AddDiet">Добавить дневник</a></td>
+                </tr>
+                @foreach (var user_data in Model)
+                {
+                    <tr>
+                        <td style="width:150px;
+									 word-break: break-all">
+                            @user_data.Name
+                        </td>
+                                <td style="width:150px;
+									 word-break: break-all">
+                                    @user_data.Description
+                                </td>
+                                <td>
+                                    <a asp-action="Show_Entry" asp-route-id="@user_data.ID" class="Edit">Изменить</a>
+                                    <a asp-action="DeleteDiet" asp-route-id="@user_data.ID" class="Delete">Удалить</a>
+                                </td>
+                    </tr>
+                 }
+            </table>
+        </div>
+        <div class="footer"><div class="copy">Все права защищены &copy; 2021 ToDoBook</div></div>
+    </div>
+</body>
+
+</html>

@@ -44,7 +44,7 @@ namespace EatingDaily.Managers.DietM
 
 			entryManager.DelEntries(ID);
 			_context = entryManager.GetContext();
-			_context.Diets.Remove(_context.Diets.FirstOrDefault(diary => diary.ID == ID));
+			_context.Diets.Remove(_context.Diets.FirstOrDefault(diet => diet.ID == ID));
 			_context.Belongings.Remove(_context.Belongings.FirstOrDefault(bel => bel.DietID == ID));
 			foreach (var el in _context.Entries.Where(el => el.DietID == ID))
 			{
