@@ -257,12 +257,7 @@
     color: white;
 }
 
-/*    .logout {
-    color: black;
-    font-size: 18px;
-    text-decoration: none;
-    text-decoration-color: black;
-}*/
+
     .logout:hover {
         transition: 0.25s;
         color: black;
