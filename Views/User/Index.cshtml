@@ -21,12 +21,12 @@
 </head>
 <body>
     <div class="validation" style="text-align:center;">
-        <div class="user" style="text-align:center;">
+        <div class="user" style="text-align:center; padding-left: 20px; padding-right: 20px;">
             <div class="user-content polyproz">
-                <h1 style="font-family: 'Caveat', cursive;  font-size: 60px; color: black; text-align:center;">Ваш профиль</h1>
+                <h1 style="font-family: 'Caveat', cursive;  font-size: 60px; color: black; text-align:center; ">Ваш профиль</h1>
                 <form method="post" enctype="multipart/form-data">
                     <input type="hidden" value="@ViewBag.Profile.ID" name="ID" />
-                    <div class="user-name"><input type="text" name="Name" value="@ViewBag.Profile.Name" placeholder="Имя"></div>
+                    <div class="user-name" style="padding-left: 20px; padding-right: 20px; "><input type="text" name="Name" value="@ViewBag.Profile.Name" placeholder="Имя"></div>
                     <div class="user-surname"><input type="text" name="LastName" value="@ViewBag.Profile.LastName" placeholder="Фамилия"></div>
                     <div class="user-telephone"><input type="text" name="Phone" value="@ViewBag.Profile.Phone" placeholder="Номер"></div>
                     @if (ViewBag.Profile.Age != 0)

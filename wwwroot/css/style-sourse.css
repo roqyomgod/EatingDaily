@@ -22,14 +22,14 @@
         text-align: center;
     }
 
-    .polyproz{
-        background-color: rgba(255,255,255, .75);
-        border-radius: 20px;
-        border: 4px black;
-        text-align: left;
-        text-decoration: none;
-        color: black;
-    }
+.polyproz {
+    background-color: rgba(235, 245, 252, .88);
+    border-radius: 20px;
+    border: 4px black;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+}
     
 
 
