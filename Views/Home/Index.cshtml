@@ -1,8 +1,41 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "EatingDaily";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>ща вкусна пахаваем</p>
-</div>
+    <style>
+        h1 {
+            color: darkslategrey;
+            margin-bottom: 40px;
+        }
+    </style>
+    <strong> <p style="font-size: 100px" <h1>  EatingDaily </h1></p></strong></p>
+    <p style="font-size: 30px">
+        <font color="#000000">
+            Твой бесплатный надежный помощник, с помощью которого вы сможете организовывать личный рацион питания!
+            Добавляйте подходящие блюда в наш дневник при помощи нескольких кликов и отслеживайте свою диету на протяжении времени.
+        </font>
+    </p>
+    <link rel="stylesheet" href="~/css/ifbotton.css" />
+    <p>
+
+        @if (!User.Identity.IsAuthenticated)
+        {
+        <p>
+
+            <a class="blank2" href="https://localhost:44350/Account/Login"> Пробуй прямо сейчас!</a>
+
+        </p>
+    }
+    else
+    {
+        <p>
+
+            <a class="blank3" href="https://localhost:44350/Home/Ration"> Пробуй прямо сейчас!</a>
+
+        </p>
+    }
+        </p>
+
+
+    </div>

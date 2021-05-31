@@ -1,20 +1,21 @@
-﻿.blank {
+﻿.blank2 {
     color: black;
-    font-size: 20px;
-}
-    .blank:hover {
-        transition: 0.25s;
-        color: black;
-        text-decoration: underline;
-     }
-.mac {
-    color: black;
-    font-size: 20px;
+    font-size: 40px;
 }
 
-    .mac:hover {
+    .blank2:hover {
         transition: 0.25s;
         color: black;
         text-decoration: underline;
     }
 
+.blank3 {
+    color: black;
+    font-size: 40px;
+}
+
+    .blank3:hover {
+        transition: 0.25s;
+        color: black;
+        text-decoration: underline;
+    }
