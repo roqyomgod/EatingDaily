@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using EatingDaily.Storage;
 using EatingDaily.Storage.Entity;
 
-namespace ToDoBook.Managers.Users
+namespace EatingDaily.Managers.Users
 {
 	public class UsersManager : IUsersManager
 	{

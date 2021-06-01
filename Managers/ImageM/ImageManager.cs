@@ -1,4 +1,4 @@
-﻿using System;
+﻿/*using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -10,7 +10,7 @@ using System.IO;
 using Microsoft.AspNetCore.Hosting;
 using EatingDaily.Managers.Profiles;
 
-namespace ToDoBook.Managers.ImageM
+namespace EatingDaily.Managers.ImageM
 {
 	public class ImageManager
 	{
@@ -51,3 +51,4 @@ namespace ToDoBook.Managers.ImageM
 	}
 }
 
+*/

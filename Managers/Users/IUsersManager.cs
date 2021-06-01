@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using EatingDaily.Storage.Entity;
 
-namespace ToDoBook.Managers.Users
+namespace EatingDaily.Managers.Users
 {
 	interface IUsersManager
 	{

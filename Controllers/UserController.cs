@@ -14,7 +14,7 @@ using EatingDaily.Managers.EntryM;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using System.IO;
-using ToDoBook.Managers.ImageM;
+//using EatingDaily.Managers.ImageM;
 
 namespace EatingDaily.Controllers
 {
@@ -28,34 +28,34 @@ namespace EatingDaily.Controllers
 			_context = context;
 		}
 		[HttpGet]
-		public ActionResult Index()
-		{
-			ProfileManager profileManager = new ProfileManager(_context);
-			Profile profile = profileManager.GetIn(int.Parse(User.Identity.Name));
-			ViewBag.Profile = profile;
-			if (profile.ImageID != 0)
-				ViewBag.Avatar = _context.Images.FirstOrDefault(imeg => imeg.ID == profile.ImageID).Image;
-			return View();
-		}
-		//
-		[HttpPost]
-		public ActionResult Index(Profile data, IFormFile Avatar)
-		{
-			if (Avatar != null)
-			{
-				ImageManager AddImage = new ImageManager(_context);
-				AddImage.AddAvatar(Avatar, int.Parse(User.Identity.Name));
-				data.ImageID = _context.Profiles.Find(data.ID).ImageID;
-				ViewBag.Avatar = _context.Images.FirstOrDefault(imeg => imeg.ID == data.ImageID).Image;
-			}
-			_context.Profiles.Remove(_context.Profiles.Find(data.ID));
-			_context.Profiles.Add(data);
-			_context.SaveChanges();
-			ViewBag.Profile = data;
-			return View(data);
-		}
+        public ActionResult Index()
+        {
+            ProfileManager profileManager = new ProfileManager(_context);
+            Profile profile = profileManager.GetIn(int.Parse(User.Identity.Name));
+            ViewBag.Profile = profile;
+        /*    if (profile.ImageID != 0)
+                ViewBag.Avatar = _context.Images.FirstOrDefault(imeg => imeg.ID == profile.ImageID).Image;*/
+            return View();
+        }
+        //
+        [HttpPost]
+        public ActionResult Index(Profile data, IFormFile Avatar)
+        {
+           /* if (Avatar != null)
+            {
+                ImageManager AddImage = new ImageManager(_context);
+                AddImage.AddAvatar(Avatar, int.Parse(User.Identity.Name));
+                data.ImageID = _context.Profiles.Find(data.ID).ImageID;
+                ViewBag.Avatar = _context.Images.FirstOrDefault(imeg => imeg.ID == data.ImageID).Image;
+            }*/
+            _context.Profiles.Remove(_context.Profiles.Find(data.ID));
+            _context.Profiles.Add(data);
+            _context.SaveChanges();
+            ViewBag.Profile = data;
+            return View(data);
+        }
 
-		public ActionResult News()
+        public ActionResult News()
 		{
 			SourceManager News_data = new SourceManager(_context);
 			return View(News_data.GetNews());
@@ -121,8 +121,8 @@ namespace EatingDaily.Controllers
 			return RedirectToAction("Show_Entry", new { ID = DietID });
 		}
 
-		[HttpGet]
-		public IActionResult Edit_Image_Entry(int id, int id2)
+		//[HttpGet]
+	/*	public IActionResult Edit_Image_Entry(int id, int id2)
 		{
 			ImageEntry imageEntry = _context.Images.Find(id);
 			ViewBag.ID = id2;
@@ -130,10 +130,10 @@ namespace EatingDaily.Controllers
 			if (imageEntry.Image != null)
 				ViewBag.Image = imageEntry.Image;
 			return View();
-		}
+		}*/
 
-		[HttpPost]
-		public ActionResult Edit_Image_Entry(TextEntry data, int DietID, IFormFile pvm)
+		//[HttpPost]
+		/*public ActionResult Edit_Image_Entry(TextEntry data, int DietID, IFormFile pvm)
 		{
 			_context.Images.Find(data.ID).Name = data.Name;
 			_context.Images.Find(data.ID).Description = data.Description;
@@ -149,7 +149,7 @@ namespace EatingDaily.Controllers
 			_context.SaveChanges();
 			return RedirectToAction("Show_Entry", new { ID = DietID });
 		}
-
+*/
 		[HttpGet]
 		public IActionResult Edit_Reminder_Entry(int id, int id2)
 		{
@@ -249,15 +249,15 @@ namespace EatingDaily.Controllers
 			return RedirectToAction("Show_Entry", new { ID = DietID });
 		}
 
-		[HttpGet]
+		//[HttpGet]
 
-		public ActionResult AddImageEntry(int ID)
+		/*public ActionResult AddImageEntry(int ID)
 		{
 			ViewBag.ID = ID;
 			return View();
-		}
+		}*/
 
-		[HttpPost]
+	/*	[HttpPost]
 		public ActionResult AddImageEntry(ImageEntry data, int DietID)
 		{
 			EntryManager entry = new EntryManager(_context);
@@ -265,7 +265,7 @@ namespace EatingDaily.Controllers
 			data.ID = 0;
 			entry.AddEntry(data, DietID);
 			return RedirectToAction("Show_Entry", new { ID = DietID });
-		}
+		}*/
 
 		[HttpGet]
 		public ActionResult AddReminderEntry(int ID)
