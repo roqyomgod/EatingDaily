@@ -1,0 +1,13 @@
+﻿.polyproz {
+    background-color: rgba(235, 245, 252, .88);
+    border-radius: 20px;
+    border: 4px black;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+}
+.table {
+    border-spacing: 50px 70px;
+    font-size: 20px;
+    table-layout: fixed;
+}

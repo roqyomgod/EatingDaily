@@ -7,39 +7,48 @@
     <title>Дневники</title>
     <link rel="stylesheet" href="~/css/diary.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0; /* Убираем отступы */
+            height: 100%;
+            background-image: url(../images/2.jpg); /* Путь к фоновому изображению */
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
 </head>
 <body>
-    
 
-    <div class="mainstr">
-        <div class="content">
-            <div class="zag">Дневники пользователя</div>
-            <table class="table">
+
+    <link rel="stylesheet" href="~/css/Style-new.css" />
+    <div class="polyproz" style="padding: 40px;">
+        <strong> <p style="font-size: 50px; text-align: center; font-family: 'Caveat', cursive;" <h1>  Дневники пользователя </h1></p></strong></p>
+        <hr align="center" width="950" size="1" color=black />
+        <div class="table" style="border:none;">
+            <tr>
+                <td>Название</td>
+                <td>Описание</td>
+                <td><a href="AddDiet">Добавить дневник</a></td>
+            </tr>
+            @foreach (var user_data in Model)
+            {
                 <tr>
-                    <td>Название</td>
-                    <td>Описание</td>
-                    <td><a class="Adddiary" href="AddDiet">Добавить дневник</a></td>
+                    <td style="width:150px;
+									 word-break: break-all">
+                        @user_data.Name
+                    </td>
+                    <td style="width:150px;
+									 word-break: break-all">
+                        @user_data.Description
+                    </td>
+                    <td>
+                        <a asp-action="Show_Entry" asp-route-id="@user_data.ID" class="Edit">Изменить</a>
+                        <a asp-action="DeleteDiet" asp-route-id="@user_data.ID" class="Delete">Удалить</a>
+                    </td>
                 </tr>
-                @foreach (var user_data in Model)
-                {
-                    <tr>
-                        <td style="width:150px;
-									 word-break: break-all">
-                            @user_data.Name
-                        </td>
-                                <td style="width:150px;
-									 word-break: break-all">
-                                    @user_data.Description
-                                </td>
-                                <td>
-                                    <a asp-action="Show_Entry" asp-route-id="@user_data.ID" class="Edit">Изменить</a>
-                                    <a asp-action="DeleteDiet" asp-route-id="@user_data.ID" class="Delete">Удалить</a>
-                                </td>
-                    </tr>
-                 }
-            </table>
+            }
         </div>
-        <div class="footer"><div class="copy">Все права защищены &copy; 2021 ToDoBook</div></div>
+        <hr align="center" width="950" size="1" color=black />
     </div>
 </body>
 
