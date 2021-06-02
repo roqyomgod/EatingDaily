@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Дневники</title>
-    <link rel="stylesheet" href="~/css/show.css">
+  
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -22,9 +22,9 @@
                                 <a asp-action="AddTextEntry" asp-route-id="@ViewBag.ID">Текстовую</a>
                                 <a href="~/User/AddChecklistEntry/@ViewBag.ID">Чеклист</a>
                                 <a href="~/User/AddReminderEntry/@ViewBag.ID">Напоминание</a>
-                                <a href="~/User/AddImageEntry/@ViewBag.ID">С картинкой</a>
+                               
                                 <a href="~/User/AddTimerEntry/@ViewBag.ID">С таймером</a>
-                                <a href="~/User/AddMitingEntry/@ViewBag.ID">Встреча</a>
+                            
                             </div>
                         </div>
                     </td>
@@ -38,7 +38,7 @@
 							@user_diary.Description
 						</td>
                         <td>
-                            <a asp-action=@user_diary.Type asp-route-id="@user_diary.ID" asp-route-id2="@ViewBag.ID" class="Edit" >Изменить</a>
+                            <a asp-action=@user_diary.Type asp-route-id="@user_diary.ID" asp-route-id2="@ViewBag.ID" class="Edit" >Подробнее</a>
                             <a asp-action="DeleteEntry" asp-route-id="@user_diary.ID" asp-route-id2="@ViewBag.ID" class="Delete" >Удалить</a>
                         </td>
                     </tr>
@@ -56,34 +56,3 @@
 
 
 
-@*<!DOCTYPE html>
-
-    <html>
-    <head>
-        <title>User's Diary</title>
-
-    </head>
-    <body>
-        <h3>User's Diary</h3>
-        <table>
-            <tr>
-                <td>Имя</td>
-                <td>Описание</td>
-                <td>ID</td>
-                <td></td>
-            </tr>
-            @foreach (var user_diary in Model)
-            {
-        <tr>
-            <td>@user_diary.Name</td>
-            <td>@user_diary.Description</td>
-            <td>@user_diary.ID</td>
-            <td>
-                <a asp-action=@user_diary.Type asp-route-id="@user_diary.ID" asp-route-id2="@ViewBag.ID">Edit</a> |
-                <a asp-action="DeleteEntry" asp-route-id="@user_diary.ID">Delete</a>
-            </td>
-        </tr>
-    }
-        </table>
-    </body>
-    </html>*@

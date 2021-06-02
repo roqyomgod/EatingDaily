@@ -28,7 +28,6 @@ namespace EatingDaily.Managers.EntryM
                         entry.Add(_context.TextEntries.Find(item.EntryID));
                         break;
                     case 2:
-                        //entry.Add(_context.MitingEntries.Find(item.EntryID));
                         break;
                     case 3:
                         entry.Add(_context.ReminderEntries.Find(item.EntryID));
@@ -59,7 +58,7 @@ namespace EatingDaily.Managers.EntryM
                         _context.TextEntries.Remove(_context.TextEntries.Find(item.EntryID));
                         break;
                     case 2:
-                        //_context.MitingEntries.Remove(_context.MitingEntries.Find(item.EntryID));
+
                         break;
                     case 3:
                         _context.ReminderEntries.Remove(_context.ReminderEntries.Find(item.EntryID));
@@ -87,7 +86,6 @@ namespace EatingDaily.Managers.EntryM
                     _context.TextEntries.Remove(_context.TextEntries.Find(ID));
                     break;
                 case 2:
-                    //_context.MitingEntries.Remove(_context.MitingEntries.Find(ID));
                     break;
                 case 3:
                     _context.ReminderEntries.Remove(_context.ReminderEntries.Find(ID));
@@ -121,20 +119,7 @@ namespace EatingDaily.Managers.EntryM
             _context.SaveChanges();
         }
 
-        //public void AddEntry(MitingEntry entry, int IdDiet)
-        //{
-        // entry.Type = "Edit_Miting_Entry";
-        // _context.MitingEntries.Add(entry);
-        // _context.SaveChanges();
-        // _context.Entries.Add(new EntriesBelonging
-        // {
-        // Type = 2,
-        // EntryID =
-        // _context.MitingEntries.ToList().Last().ID,
-        // DiaryID = IdDiet
-        // });
-        // _context.SaveChanges();
-        //}
+       
 
         public void AddEntry(ReminderEntry entry, int IdDiet)
         {

@@ -14,7 +14,7 @@ using EatingDaily.Managers.EntryM;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using System.IO;
-//using EatingDaily.Managers.ImageM;
+
 
 namespace EatingDaily.Controllers
 {
@@ -33,21 +33,14 @@ namespace EatingDaily.Controllers
             ProfileManager profileManager = new ProfileManager(_context);
             Profile profile = profileManager.GetIn(int.Parse(User.Identity.Name));
             ViewBag.Profile = profile;
-        /*    if (profile.ImageID != 0)
-                ViewBag.Avatar = _context.Images.FirstOrDefault(imeg => imeg.ID == profile.ImageID).Image;*/
+       
             return View();
         }
-        //
+        
         [HttpPost]
         public ActionResult Index(Profile data, IFormFile Avatar)
         {
-           /* if (Avatar != null)
-            {
-                ImageManager AddImage = new ImageManager(_context);
-                AddImage.AddAvatar(Avatar, int.Parse(User.Identity.Name));
-                data.ImageID = _context.Profiles.Find(data.ID).ImageID;
-                ViewBag.Avatar = _context.Images.FirstOrDefault(imeg => imeg.ID == data.ImageID).Image;
-            }*/
+        
             _context.Profiles.Remove(_context.Profiles.Find(data.ID));
             _context.Profiles.Add(data);
             _context.SaveChanges();
@@ -121,35 +114,8 @@ namespace EatingDaily.Controllers
 			return RedirectToAction("Show_Entry", new { ID = DietID });
 		}
 
-		//[HttpGet]
-	/*	public IActionResult Edit_Image_Entry(int id, int id2)
-		{
-			ImageEntry imageEntry = _context.Images.Find(id);
-			ViewBag.ID = id2;
-			ViewBag.Entries = imageEntry;
-			if (imageEntry.Image != null)
-				ViewBag.Image = imageEntry.Image;
-			return View();
-		}*/
+		
 
-		//[HttpPost]
-		/*public ActionResult Edit_Image_Entry(TextEntry data, int DietID, IFormFile pvm)
-		{
-			_context.Images.Find(data.ID).Name = data.Name;
-			_context.Images.Find(data.ID).Description = data.Description;
-			if (pvm != null)
-			{
-				byte[] imageData = null;
-				using (var binaryReader = new BinaryReader(pvm.OpenReadStream()))
-				{
-					imageData = binaryReader.ReadBytes((int)pvm.Length);
-				}
-				_context.Images.Find(data.ID).Image = imageData;
-			}
-			_context.SaveChanges();
-			return RedirectToAction("Show_Entry", new { ID = DietID });
-		}
-*/
 		[HttpGet]
 		public IActionResult Edit_Reminder_Entry(int id, int id2)
 		{
@@ -249,23 +215,7 @@ namespace EatingDaily.Controllers
 			return RedirectToAction("Show_Entry", new { ID = DietID });
 		}
 
-		//[HttpGet]
-
-		/*public ActionResult AddImageEntry(int ID)
-		{
-			ViewBag.ID = ID;
-			return View();
-		}*/
-
-	/*	[HttpPost]
-		public ActionResult AddImageEntry(ImageEntry data, int DietID)
-		{
-			EntryManager entry = new EntryManager(_context);
-			data.Type = "Edit_Image_Entry";
-			data.ID = 0;
-			entry.AddEntry(data, DietID);
-			return RedirectToAction("Show_Entry", new { ID = DietID });
-		}*/
+		
 
 		[HttpGet]
 		public ActionResult AddReminderEntry(int ID)

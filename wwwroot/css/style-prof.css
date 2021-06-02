@@ -1,17 +1,5 @@
 ﻿
-/*
-.container-logo {
-    position: absolute;
-    top: 5px;
-    left: 175px;
-    right: 165px;
-    width: 50px;
-    height: 50px;
-    border-radius: 15px;
-    border-color: #828185;
-    background-color: #FFE8C5;
-}
-/*Шапка*/
+
 
 /*Фон*/
 .mainstr {
@@ -26,10 +14,7 @@
 .user {
     position: relative center;
     display: flex;
-    /*width: 1200px;
-    height: 400px;
-    top: 100px;
-    left: 210px;*/
+   
     justify-content: space-around;
     align-items: center;
 }
@@ -163,74 +148,4 @@
         color: #000;
         background-color: #FFE8C5;
     }
-/*.logout input[type="button"] {
-    background: none;
-    font-size: 20px;
-    font-family: 'Montserrat';
-    display: block;
-    margin: 20px auto;
-    text-align: center;
-    border: 2px solid #efefef;
-    background-color: #ebf5fc;
-    padding: 14px 10px;
-    width: 200px;
-    outline: none;
-    color: #303030;
-    border-radius: 24px;
-    transition: 0.25s;
-}*/
-    }
 
-
-
-
-/*Фон*/
-
-/*Навигация*/
-/*
-.nav {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    text-transform: uppercase;
-    margin-right: 50px;
-}
-
-
-
-.nav_link {
-    color: #ebf5fc;
-    text-decoration: none;
-    transition: color .2s linear;
-    vertical-align: top;
-    display: inline-block;
-    margin: 0px 15px;
-}
-
-    .nav_link:hover {
-        color: #fae26b;
-    }
-/*Навигация*/
-/*
-
-.copy {
-    margin-left: 50px;
-    margin-top: 15px;
-}
-
-.Login h1 {
-    color: white;
-    text-align: center;
-    font-weight: 300;
-}*/
-
-
-
-/*.polyproz {
-    background-color: rgba(255,255,255, .75);
-    border-radius: 20px;
-    border: 4px black;
-    text-align: left;
-    text-decoration: none;
-    color: black;
-}
-*/

@@ -4,21 +4,21 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Дневники</title>
-    <link rel="stylesheet" href="~/css/diary.css">
+    <title>Рационы</title>
+   
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+
 
     <div class="mainstr">
         <div class="content">
-            <div class="zag">Дневники пользователя</div>
+            <div class="zag">Рационы пользователя</div>
             <table class="table">
                 <tr>
                     <td>Название</td>
                     <td>Описание</td>
-                    <td><a class="Adddiary" href="AddDiet">Добавить Рацион</a></td>
+                    <td><a class="Adddiary" href="AddDiet">Добавить рацион</a></td>
                 </tr>
                 @foreach (var user_data in Model)
                 {
@@ -32,7 +32,7 @@
                                     @user_data.Description
                                 </td>
                                 <td>
-                                    <a asp-action="Show_Entry" asp-route-id="@user_data.ID" class="Edit">Изменить</a>
+                                    <a asp-action="Show_Entry" asp-route-id="@user_data.ID" class="Edit">Подробнее</a>
                                     <a asp-action="DeleteDiet" asp-route-id="@user_data.ID" class="Delete">Удалить</a>
                                 </td>
                     </tr>
